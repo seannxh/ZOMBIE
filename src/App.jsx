@@ -134,7 +134,7 @@ function App() {
 
     const updateTeam = team.map((t, index) => (
       <li key={index}>
-        <p>{t.name}</p>
+        <h4>{t.name}</h4>
         <p>Price: {t.price}</p>
         <p>Strength: {t.strength}</p>
         <p>Agility: {t.agility}</p>
@@ -160,7 +160,7 @@ function App() {
           <ul>
             {zombieFighters.map((zombie, index) => (
               <li key={index}>
-                <p>{zombie.name}</p>
+                <h4>{zombie.name}</h4>
                 <p>Price: {zombie.price}</p>
                 <p>Strength: {zombie.strength}</p>
                 <p>Agility: {zombie.agility}</p>
