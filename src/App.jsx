@@ -146,15 +146,17 @@ function App() {
   return (
     <>
       <div>
-        <h1>Money: {money}</h1>
-          <h2>Your Team</h2>
-            <h3>Team's Strength: {strength}</h3>
-            <h3>Team's Agility: {agility}</h3>
-            <h3>Team's Total Price: {price}</h3>
+        <h1>Zombie Fighters!</h1>
+            <h1>Team Stats:</h1>
+            <h2>Money: {money}</h2>
+            <h3>Strength: {strength}</h3>
+            <h3>Agility: {agility}</h3>
+            <h3>Total Price: {price}</h3>
+            <h1>Your Team:</h1>
             <ul>
             {team.length === 0 ? "Please Pick a Team Member" : updateTeam }
             </ul>
-        <h2>Available Team Members</h2>
+        <h1>Available Team Members</h1>
           <ul>
             {zombieFighters.map((zombie, index) => (
               <li key={index}>
